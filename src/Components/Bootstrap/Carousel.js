@@ -1,15 +1,17 @@
 import React from 'react'
-import { Carousel, CarouselItem } from 'react-bootstrap'
-import SliderImg from '../../Images/SliderImages/Slider.jpg'
+import { Carousel} from 'react-bootstrap'
+import SliderImg1 from '../../Assets/Images/SliderImages/slider1.webp'
+import SliderImg2 from '../../Assets/Images/SliderImages/slider2.webp'
+import SliderImg3 from '../../Assets/Images/SliderImages/slider3.webp'
 
 
 function Slider() {
   return (
-    <Carousel fade className='carousel'>
-  <Carousel.Item>
+    <Carousel fade  controls='false'>
+  <Carousel.Item class="inner-item">
     <img
-      className="d-block w-100 h-50"
-      src={SliderImg}
+      className="d-block w-100"
+      src={SliderImg1}
       alt="First slide"
 
     />
@@ -18,10 +20,10 @@ function Slider() {
       <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item>
+  <Carousel.Item >
     <img
       className="d-block w-100"
-      src={SliderImg}
+      src={SliderImg2}
       alt="Second slide"
     />
 
@@ -33,7 +35,7 @@ function Slider() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={SliderImg}
+      src={SliderImg3}
       alt="Third slide"
     />
 

@@ -8,7 +8,7 @@ import SliderImg3 from '../../Assets/Images/SliderImages/slider3.webp'
 function Slider() {
   return (
     <Carousel fade  controls='false'>
-  <Carousel.Item class="inner-item">
+  <Carousel.Item className="inner-item">
     <img
       className="d-block w-100"
       src={SliderImg1}

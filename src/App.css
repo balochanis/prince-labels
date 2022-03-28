@@ -38,13 +38,15 @@
   }
 }
 
-/* .slider .item {
-  height: 300px;
-} */
-
+.navbar
+{
+  display: flex !important;
+  justify-content: center !important;
+  background-color: blue !important;
+}
 .carousel-item
 {
-  height: calc(100vh - 56px);
+  height: calc(100vh - 10rem);
 }
 .item img {
     position: absolute;

@@ -1,28 +1,90 @@
-import React from 'react'
-import { Container, Navbar, NavDropdown, Nav } from 'react-bootstrap'
+import React, { useState } from "react";
+import "./navbar.css";
+import {
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaYoutube,
+} from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
 
-function NavBar() {
+import { NavLink } from "react-router-dom";
+
+const Navbar = () => {
+  const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
-    <Navbar bg="light" expand="lg">
-  <Container>
-    <Navbar.Brand href="#home">Prince Custom Embroidery Stickers</Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="me-auto">
-        <Nav.Link href="/">Home</Nav.Link>
-        <Nav.Link href="/About">About</Nav.Link>
-        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-        </NavDropdown>
-      </Nav>
-    </Navbar.Collapse>
-  </Container>
-</Navbar>
-  )
-}
+    <>
+      <nav className="main-nav">
+        {/* 1st logo part  */}
+        <div className="logo">
+          <h2>
+            <span>P</span>rince
+            <span>L</span>ables
+          </h2>
+        </div>
 
-export default NavBar
+        {/* 2nd menu part  */}
+        <div
+          className={
+            showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
+          }>
+          <ul>
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">about</NavLink>
+            </li>
+            <li>
+              <NavLink to="/service">services</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">contact</NavLink>
+            </li>
+          </ul>
+        </div>
+
+        {/* 3rd social media links */}
+        <div className="social-media">
+          <ul className="social-media-desktop">
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
+                target="_thapa">
+                <FaFacebookSquare className="ImFacebook2" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/thapatechnical/"
+                target="_thapa">
+                <FaInstagramSquare className="instagram" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
+                target="_thapa">
+                <FaYoutube className="youtube" />
+              </a>
+            </li>
+          </ul>
+
+          {/* hamburget menu start  */}
+          <div className="hamburger-menu">
+            <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+              <GiHamburgerMenu />
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      {/* hero section  */}
+      {/* <section className="hero-section">
+        <p>Welcome to </p>
+        <h1>Thapa Technical</h1>
+      </section> */}
+    </>
+  );
+};
+
+export default Navbar;

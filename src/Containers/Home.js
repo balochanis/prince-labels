@@ -1,18 +1,14 @@
-import React from 'react'
-import Header from '../Components/Bootstrap/Header';
-import Gallery from '../Components/Gallery';
-import Pages from '../Components/Bootstrap/Pages'
-import Footer from '../Components/Footer';
+import React from 'react';
+import Header from '../Components/Header';
+
+
 
 function Home() {
   return (
     <div>
-<Header></Header>
+      <Header className="header">
 
-  <Gallery></Gallery>
-  <Pages></Pages>
-  <Footer></Footer>
-
+      </Header>
 
 
 

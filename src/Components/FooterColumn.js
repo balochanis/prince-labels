@@ -7,6 +7,7 @@ function FooterColumn() {
   let state = useSelector(state => state);
   return (
     <div className='footer-column'>
+
         <h5 className='footer-heading'><a href="/about">{state.users[1].email}</a></h5>
         <a href="/about" >Sports</a>
         <a href="/about" >Sports</a>

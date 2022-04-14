@@ -1,11 +1,9 @@
 import React from 'react'
-import Header from '../Components/Bootstrap/Header';
 
 
 function About() {
   return (
     <div>
-       <Header></Header>
        <h1>About</h1>
     </div>
   )

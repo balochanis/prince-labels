@@ -1,15 +1,16 @@
 import React from 'react'
-import { Carousel} from 'react-bootstrap'
-
-
-
+import {Carousel} from 'react-bootstrap';
+const style = {
+  // height: 'calc(100vh - 56px)',
+  // display: 'none'
+}
 function Slider() {
   return (
-    <Carousel fade>
+    <Carousel style={style}>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://i.picsum.photos/id/1/800/400.jpg?hmac=lP5ueMCjxeLFC5HJPNkGzLE9oZOcWhPpOQZ12itchyY"
+      src={"https://i.picsum.photos/id/1/800/400.jpg?hmac=lP5ueMCjxeLFC5HJPNkGzLE9oZOcWhPpOQZ12itchyY"}
       alt="First slide"
     />
     <Carousel.Caption>
@@ -20,7 +21,7 @@ function Slider() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://i.picsum.photos/id/967/800/400.jpg?hmac=tucYJHMv8S5CMSFmUobKYEsGohVqYJ_N-QDt9y-q30o"
+      src="https://i.picsum.photos/id/1/800/400.jpg?hmac=lP5ueMCjxeLFC5HJPNkGzLE9oZOcWhPpOQZ12itchyY"
       alt="Second slide"
     />
 
@@ -32,7 +33,7 @@ function Slider() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://i.picsum.photos/id/323/800/400.jpg?hmac=fIRwhI0GTJR6Outceta7kRdjm1dUAoiKJmqDt5bW7rU"
+      src="https://i.picsum.photos/id/1/800/400.jpg?hmac=lP5ueMCjxeLFC5HJPNkGzLE9oZOcWhPpOQZ12itchyY"
       alt="Third slide"
     />
 

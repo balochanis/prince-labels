@@ -8,17 +8,15 @@
 }
 
 .app {
-  background-color: #61dafb;
   font-family: Montserrat, 'sans-serif';
   font-size: 1rem;
   margin: 0;
 }
 
-/* Header */
-.header
-{
-  height: 100vh;
+.slider {
+  display: none !important;
 }
+
 
 
 .gallery {
@@ -29,10 +27,12 @@
   padding: 40px;
 }
 
+
+/* Card Styles */
+
 .card {
   display: flex;
   justify-content: flex-start;
-  /* flex-grow: 4; */
   margin: 10px;
   width: 200px;
   background-color: #61dafb;
@@ -45,24 +45,49 @@
   text-align: left;
 }
 
+.card-image {
+  position: relative;
+}
+
 .card-picture {
   width: 100%;
 }
 
-.card-feature {
-  margin-left: auto;
-  font-size: 75%;
-  background-color: gray;
-  padding: 2px 6px;
-  border-radius: 5px;
-  color: white;
-  margin-right: 4px;
-  margin-top: 4px;
-  font-weight: 400;
+.card-title {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
 }
 
-.card-title {
-  font-size: 16px;
+.card-subtitle {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.wishlist {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding: 0.3rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+
+}
+
+.wishlist:hover {
+  cursor: pointer;
+}
+
+.wishlist-icon {
+  color: rgb(155, 155, 155);
+}
+
+.wishlist-icon:hover {
+  color: rgb(68, 68, 68);
+}
+
+
+.card-detail {
+  font-size: 0.8rem;
 }
 
 .pagination {
@@ -81,5 +106,17 @@
 .footer-column {
   display: flex;
   flex-direction: column;
-  background-color: #61dafb;
+  /* background-color: #61dafb; */
+}
+
+
+
+/* Stickers */
+.stickers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card+.card {
+  background-color: #2f466c;
 }

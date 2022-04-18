@@ -1,9 +1,13 @@
 import React from 'react'
 import {Navbar,Container,Nav,NavDropdown,Form,Button,FormControl } from 'react-bootstrap'
 
+const navStyle = {
+    zIndex: 1,
+    backgroundColor: '#fefefe'
+}
 function Header() {
   return (
-    <Navbar bg="dark" variant={'dark'} expand="lg">
+    <Navbar expand="lg" fixed='top' style={navStyle} >
   <Container fluid>
     <Navbar.Brand href="#">Prince Labels</Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />

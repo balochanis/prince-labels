@@ -1,4 +1,41 @@
 const INTIAL_STATE = {
+    stickers:[
+        {
+            title: "Sticker Title 1",
+            desc: "Sticker Description goes here 1" 
+
+        },
+        {
+            title: "Sticker Title 1",
+            desc: "Sticker Description goes here 1" 
+
+        },
+        {
+            title: "Sticker Title 1",
+            desc: "Sticker Description goes here 1" 
+
+        },
+        {
+            title: "Sticker Title 1",
+            desc: "Sticker Description goes here 1" 
+
+        },
+        {
+            title: "Sticker Title 1",
+            desc: "Sticker Description goes here 1" 
+
+        },
+        {
+            title: "Sticker Title 1",
+            desc: "Sticker Description goes here 1" 
+
+        },
+        {
+            title: "Sticker Title 1",
+            desc: "Sticker Description goes here 1" 
+
+        },
+    ],
     users: [ 
         {
             state: "Karachi",
